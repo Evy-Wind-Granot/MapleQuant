@@ -1,0 +1,41 @@
+# ---- MapleQuant docs repository ----
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# ---- Secrets: NEVER COMMIT (SEC-03, enforced by gitleaks in CI) ----
+.env
+.env.*
+secrets/
+*.age
+*.key
+*credentials*
+
+# ---- Local working artifacts (not for the docs repo) ----
+*.bak
+*.tmp
+drafts-local/
+
+# ---- Future engine artifacts (if code ever lives here; it shouldn't - ADR-008) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+*.egg-info/
+build/
+dist/
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
